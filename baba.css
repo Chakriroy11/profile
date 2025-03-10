@@ -1,0 +1,169 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #2c3e50;
+}
+
+.profile-section {
+    background-color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #3498db;
+    object-fit: cover;
+    margin-right: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-info {
+    max-width: 600px;
+    text-align: left;
+}
+
+.profile-info h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.profile-info .bio {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.profile-info ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.profile-info ul li {
+    font-size: 1.1rem;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.profile-info ul li strong {
+    color: #3498db; /* Highlighting the labels */
+}
+
+/* Education Section */
+.education-section {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.education-section h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.education-item {
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.education-item h3 {
+    font-size: 1.8rem;
+    color: #2980b9;
+}
+
+.education-item p {
+    font-size: 1.2rem;
+    color: #34495e;
+}
+
+/* Skills Section */
+.skills-section {
+    background-color: #ecf0f1;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.skills-section h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.skills-container ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-container ul li {
+    font-size: 1.2rem;
+    color: #2980b9;
+    margin: 10px 30px;
+    font-weight: bold;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skills-container ul li:hover {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-picture {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .profile-info ul {
+        text-align: center;
+    }
+
+    .skills-container ul {
+        flex-direction: column;
+    }
+
+    .skills-container ul li {
+        margin: 10px 0;
+    }
+}

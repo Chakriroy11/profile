@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, white, #a8b9ff); 
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background: linear-gradient(145deg, #ffffff, #f1f1f1); 
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 5px 5px rgba(0, 0, 0, 0.1); 
+    opacity: 0;
+    animation: fadeIn 1.5s forwards; 
+    text-align: center; 
+    border: 1px solid #e0e0e0;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 25px;
+    opacity: 0;
+    animation: slideIn 1s forwards; 
+    animation-delay: 0.5s;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 18px 25px;
+    opacity: 0;
+    animation: fadeUp 1s forwards;
+    animation-delay: 1s;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #ff9a8b, #ff6a88); 
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); 
+}
+
+.contact-item:hover {
+    background: linear-gradient(135deg, #007bff, #0056b3); 
+    color: #fff;
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3); 
+}
+
+.contact-item i {
+    font-size: 28px;
+    margin-right: 20px;
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-item i:hover {
+    transform: scale(1.3);
+    color: #ffd700; 
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #ffd700; 
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Contact Information</h1>
+
+        <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <a href="tel:8187825411"> 8187826411</a>
+        </div>
+
+        <div class="contact-item">
+            <i class="fab fa-whatsapp"></i>
+            <a href="https://wa.me/8187826411" target="_blank"> 8187826411</a> 
+        </div>
+
+        <div class="contact-item">
+            <i class="fab fa-instagram"></i>
+            <a href="https://www.instagram.com/chakri_roy__" target="_blank">@chakri_roy__</a>
+        </div>
+
+        <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/chandaka-chakri-837670274" target="_blank">Chandaka Chakri </a>
+        </div>
+        <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/chakriroy1" target="_blank">GitHub</a>
+        </div>
+    </div>
+
+</body>
+</html>
