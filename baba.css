@@ -66,10 +66,9 @@ body {
 }
 
 .profile-info ul li strong {
-    color: #3498db; /* Highlighting the labels */
+    color: #3498db;
 }
 
-/* Education Section */
 .education-section {
     background-color: #ffffff;
     padding: 50px 20px;
@@ -104,7 +103,6 @@ body {
     color: #34495e;
 }
 
-/* Skills Section */
 .skills-section {
     background-color: #ecf0f1;
     padding: 50px 20px;
@@ -143,7 +141,6 @@ body {
     cursor: pointer;
 }
 
-/* Responsiveness for smaller screens */
 @media (max-width: 768px) {
     .profile-container {
         flex-direction: column;
